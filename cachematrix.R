@@ -21,6 +21,7 @@ makeCacheMatrix<-function(p=matrix()) {
 ## Write a short comment describing this function
 
 cachesolve<-function(o,...) {
+  ## Return a matrix that is the inverse of 'o'
   m<-o$getsolve()
   if(!is.null(m)) {
     message("getting cached data")
